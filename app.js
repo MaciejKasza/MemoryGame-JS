@@ -85,6 +85,7 @@ class Game {
             card.dataset.key = board[index].id;
 
             if (board[index].isClicked) {
+                card.style.backgroundImage = '';
                 card.style.backgroundColor = board[index].color;
 
             } else {
