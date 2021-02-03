@@ -1,6 +1,8 @@
 # O projekcie
 Projekt został zrealizowany na potrzzeby utrwalenia najomości js, html i css. 
 
+https://maciejkasza.github.io/MemoryGame-JS/
+
 ## Gra w memory
 Gra w memory polega na odłanianiu kard, każda karta ma swoją parę. Punkt zdobywa sie jeśli odsłonimy dwie takie same karty. Gra stworzona jest do gry w kooperacji na jednym urządzeniu.
 
