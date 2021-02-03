@@ -89,7 +89,7 @@ class Game {
 
             } else {
                 //card.style.backgroundColor = board[index].color;
-                card.textContent = board[index].id;
+                //card.textContent = board[index].id;
 
                 card.style.backgroundColor = 'gray';
             }
