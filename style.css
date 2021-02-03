@@ -129,7 +129,7 @@ button:hover {
 
 .card {
     margin: 1px;
-    background-color: blue;
+    background-color: linear-gradient(red, yellow);
     flex-basis: calc(25% - 2px);
     cursor: pointer;
     border-radius: 10px;

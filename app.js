@@ -91,7 +91,8 @@ class Game {
                 //card.style.backgroundColor = board[index].color;
                 //card.textContent = board[index].id;
 
-                card.style.backgroundColor = 'gray';
+                card.style.backgroundImage = 'radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%)';
+
             }
 
 
