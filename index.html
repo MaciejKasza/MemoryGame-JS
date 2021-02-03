@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="game-menu left">
+            <h1 class="title">Memory</h1>
+            <label for="board-size">Wybierz ilosc kart:
+                <select name="board-size" id="board-size">
+                </select>
+            </label>
+            <button id="start-game">Roczpocznij grę</button>
+
+        </div>
+        <div class="game-scene right hide">
+            <h1 class="title">Memory</h1>
+            <section class="panel">
+                <h2>Runda <span id="round-number">1</span>:</h2>
+                <h3>Gracz <span id="player-turn">2</span> wybiera!</h3>
+            </section>
+            <section class="game">
+                <div class="board">
+
+                </div>
+                <div class="score">
+                    <h2>Gracz 1 <span class="player-score">2</span> : <span class="player-score">5</span> Gracz 2</h2>
+                </div>
+            </section>
+        </div>
+        <footer>Create by Maciej Kasza</footer>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

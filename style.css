@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial, sans-serif;
+    font-size: 10px;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hide.left {
+    transform: translateX(-100%);
+}
+
+.hide.right {
+    transform: translateX(100%);
+}
+
+.game-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s linear;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 50px;
+}
+
+label select {
+    font-size: 2.2rem;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.game-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0;
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s linear;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.panel h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.panel h3 {
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    flex-basis: 75vh;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.board.win {
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #888;
+    color: white;
+}
+
+.card {
+    margin: 1px;
+    background-color: blue;
+    flex-basis: calc(25% - 2px);
+    cursor: pointer;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.card.revers {
+    background-color: gray;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 3px black;
+}
+
+.game .score {
+    padding: 10px;
+    flex-grow: 1;
+    font-weight: normal;
+}
+
+.game .score h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 2.6rem;
+
+}
+
+.game .score span {
+    font-weight: bold;
+    font-size: 3.4rem;
+    padding: 0 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 50px;
+}
