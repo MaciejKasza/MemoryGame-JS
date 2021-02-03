@@ -59,6 +59,7 @@ class Game {
 
         for (let i = 0; i < size / 2; i++) {
             colors[i] = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            colors[i].length <= 6 ? colors[i] += '0' : '#000';
             for (let j = 0; j < 2; j++) {
                 let randomIndex = Math.floor(Math.random() * tmpArrayWithIndexes.length);
                 board[tmpArrayWithIndexes[randomIndex]] = new Card(i, colors[i]);
@@ -76,6 +77,7 @@ class Game {
             boardHTML.appendChild(div);
 
         });
+        console.log(board);
         return board;
     }
 
@@ -91,8 +93,8 @@ class Game {
             } else {
                 //card.style.backgroundColor = board[index].color;
                 //card.textContent = board[index].id;
-
-                card.style.backgroundImage = 'radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%)';
+                card.style.backgroundColor = board[index].color;
+                // card.style.backgroundImage = 'radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%)';
 
             }
 
